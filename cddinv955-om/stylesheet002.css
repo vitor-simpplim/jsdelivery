@@ -1,0 +1,149 @@
+<style>
+
+.content-calc .range-content {
+    position: relative;
+    color: #25083E;
+    margin: 0 auto 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+		justify-content:space-between;
+	  align-items: center;
+}
+
+.content-calc .range-content .input-range-group input {
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+		width: 72px;
+    border-bottom: 2px solid #006a5b;
+    margin-right: 17px;
+    text-align: center;
+    border-radius: 0;
+    padding: 0px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.content-calc .range-content .range-element {
+    flex: 0 0 60%;  /* Alterado para ocupar 60% do espaço */
+}
+
+.content-calc .range-content .range-element input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 9px;
+  border-radius: 6px;  
+  background: #61C1AD;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  z-index: 1;
+}
+	
+	.content-calc .range-content .box-info {
+		display: flex;
+		width:39%;
+		justify-content:space-between;
+	}
+
+.content-calc .range-content .range-element input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; 
+    background: #a0e2ba url("https://orienteme.com.br/wp-content/uploads/2023/10/circle-1.svg") no-repeat;
+    background-position: 6px;
+    background-size: 18px 18px;
+    cursor: default;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 16%);
+    transition: all 0.2s;
+}
+
+.content-calc .range-content .range-element input::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: default;
+    background: #a0e2ba url("https://orienteme.com.br/wp-content/uploads/2023/10/circle-1.svg") no-repeat;
+    background-position: 6px;
+    background-size: 18px 18px;
+    cursor: default;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 16%);
+    transition: all 0.2s;
+    z-index: 1;
+}
+
+.table-calc-roi {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    background-color: transparent !important;
+		font-size:14px;
+}
+
+.table-calc-roi td {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.table-calc-roi td:hover {
+    background-color: transparent !important;
+}
+
+.table-calc-roi td:first-child {
+    text-align: left !important;
+}
+
+.table-calc-roi td:last-child {
+    text-align: right !important;
+}
+
+@media screen and (max-width: 680px){
+	  
+		.content-calc .range-content {
+        flex-direction: column;
+    }
+
+    .content-calc .range-content .input-label {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }	
+	
+    .content-calc .range-content .input-label .text {
+        font: 16px;
+    }
+
+    .content-calc .range-content .input-range-group input {
+        font-size: 16px;
+        width: 40px;
+        margin-right: 0px;
+    }
+
+    .content-calc .range-content .input-range-group > button {
+        display: none;
+    }
+
+    .content-calc .range-content .range-element input {
+        height: 3px;
+    }
+
+    .content-calc .range-content .range-element input::-webkit-slider-thumb {
+        width: 15px;
+        height: 15px;
+        background-size: 9px 9px;
+        background-position: 3px;
+    }
+    
+    .content-calc .range-content .range-element input::-moz-range-thumb {
+        width: 15px;
+        height: 15px;
+        background-size: 9px 9px;
+        background-position: 3px;
+    }
+}
+
+</style>
