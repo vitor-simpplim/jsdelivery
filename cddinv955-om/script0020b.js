@@ -1,4 +1,3 @@
-<script>
 // Função para calcular o custo de Turnover
 function calcularTurnover(quantidadeFuncionarios, salarioMedio) {
     return salarioMedio * 2 * 2 * (quantidadeFuncionarios * 0.45) + (quantidadeFuncionarios * 0.45) * 2 * salarioMedio;
@@ -188,5 +187,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-</script>
